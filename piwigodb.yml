@@ -9,7 +9,7 @@ rancher:
       environment:
         PGID: 1020
         PUID: 1020
-        TZ: Europe/Stockholm
+        TZ: Stockholm
         MYSQL_ROOT_PASSWORD: root_password
         MYSQL_DATABASE: piwigo
         MYSQL_USER: piwigo
