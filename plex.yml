@@ -5,7 +5,7 @@ rancher:
       hostname: plex
       restart: always
       environment:
-        TZ: Europe/Stockholm
+        TZ: Americas/Phoenix
         PGID: 1020
         PUID: 1020
         VERSION: latest
