@@ -7,7 +7,7 @@ rancher:
       environment:
         PUID: 1020
         PGID: 1020
-        TZ: Americas/Phoenix
+        TZ: Phoenix
         SUBDOMAINS: subdomain1,subdomain2
         TOKEN: token
         LOG_FILE: true
