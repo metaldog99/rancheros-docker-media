@@ -262,31 +262,31 @@ TODO for using your own domain, and not just duck dns
 
 ## Access dockers:
 Portainer:
-http://10.0.0.200:9000
+http://192.168.72.200:9000
 
 Heimdall:
-http://10.0.0.200:5555
+http://192.168.72.200:5555
 
 Radarr:
-http://10.0.0.200:7878
+http://192.168.72.200:7878
 
 Sonarr:
-http://10.0.0.200:8989
+http://192.168.72.200:8989
 
 Jacket:
-http://10.0.0.200:9117
+http://192.168.72.200:9117
 
 Plex:
-http://10.0.0.200:32400/web
+http://192.168.72.200:32400/web
 
 Transmission:
-http://10.0.0.200:9091/transmission/web/
+http://192.168.72.200:9091/transmission/web/
 
 Ombi:
-http://10.0.0.200:3579
+http://192.168.72.200:3579
 
 Tautulli:
-http://10.0.0.200:8181
+http://192.168.72.200:8181
 
 
 ## My configurations of dockers
@@ -312,7 +312,7 @@ http://10.0.0.200:8181
 - "+"
 - Transmission
 - Name: Transmission
-- Host: 10.0.0.200
+- Host: 192.168.72.200
 - Connect
 - "+"
 - Telegram
@@ -328,7 +328,7 @@ http://10.0.0.200:8181
 - Select login with Plex and follow the instructions to use Plex as login
 - Movies - Radarr
 - Enabled: check
-- Hostname or IP: 10.0.0.200
+- Hostname or IP: 192.168.72.200
 - Port: 7878
 - API Key: Paste API key from Radarr
 - Get QUality Profiles select HD-1080p
@@ -344,7 +344,7 @@ http://10.0.0.200:8181
 - Enable: check
 - Add Server
 - Server name: Rancher
-- Hostname or IP: 10.0.0.200
+- Hostname or IP: 192.168.72.200
 - Port: 32400
 - Submit
 
@@ -360,7 +360,7 @@ No configuration needed for now (maybe after VPN setup)
 
 
 ### Heimdall
-http://10.0.0.200:5555
+http://192.168.72.200:5555
 Add all URL's listed above
 Add Sonarr, Radarr and Tautulli with API Key
 
@@ -370,11 +370,11 @@ Add Sonarr, Radarr and Tautulli with API Key
 ### NextCloud: (TODO: More explainations and details of where to do stuff)
 This video might be helpfull to understand stuff: https://www.youtube.com/watch?v=I0lhZc25Sro  
   
-port forward on your router: 443 to 10.0.0.200:443  
-port forward on your router: 80 to 10.0.0.200:80  (for letsencrypt to know you own the DNS)  
+port forward on your router: 443 to 192.168.72.200:443  
+port forward on your router: 80 to 192.168.72.200:80  (for letsencrypt to know you own the DNS)  
   
 
-https://10.0.0.200:1443
+https://192.168.72.200:1443
 Username: admin  
 Password: your_password  
 Data folder: /data  
