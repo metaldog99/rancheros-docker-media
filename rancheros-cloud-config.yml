@@ -26,7 +26,3 @@ rancher:
       environment:
         SERVER: 192.168.72.200
         SHARE: /mnt/Data/rancher
-        
-        
-        
-        d
