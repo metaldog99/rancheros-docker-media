@@ -7,7 +7,7 @@ rancher:
       environment:
         PGID: 1020
         PUID: 1020
-        TZ: Americas/Phoenix
+        TZ: Phoenix
       labels:
         io.rancher.os.after: console, preload-user-images
       privileged: true
