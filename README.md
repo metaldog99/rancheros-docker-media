@@ -167,18 +167,18 @@ In shell on local computer (Linux subsystem for Windows 10, (Ubuntu) to get SSH 
 - `ssh rancher@10.0.0.XXX`
 - `ifconfig` (to check network interfaces, should be eth0 as main interface)
 - `sudo ros config get rancher.network`
-- `sudo ros config set rancher.network.interfaces.eth0.address 10.0.0.200/24`
-- `sudo ros config set rancher.network.interfaces.eth0.gateway 10.0.0.138`
+- `sudo ros config set rancher.network.interfaces.eth0.address 192.168.72.200/24`
+- `sudo ros config set rancher.network.interfaces.eth0.gateway 192.168.72.1
 - `sudo ros config set rancher.network.interfaces.eth0.mtu 1500`
 - `sudo ros config set rancher.network.interfaces.eth0.dhcp false`
-- `sudo ros config set rancher.network.nameservers "['8.8.8.8','4.2.2.2','10.0.0.138']"`
+- `sudo ros config set rancher.network.nameservers "['8.8.8.8','4.2.2.2','192.168.72.1']"`
 - `sudo ros config get rancher.network`
 - `sudo reboot`
 
 
 ## Mount NFS share inside RancherOS VM
 This step creates a docker that makes your FreeNAS dataset available as a NFS share inside the VM.
-- `ssh rancher@10.0.0.200`
+- `ssh rancher@192.168.72.200`
 - rancher_password
 - `sudo su -`
 - `cd /var/lib/rancher/conf/cloud-config.d/`
@@ -195,7 +195,7 @@ This step creates a docker that makes your FreeNAS dataset available as a NFS sh
 This is an important part to get permissions to work across dockers and windows share.  
 Check out the video in Credits (Part 2) for more details.  
 Creates the 1020 user inside the RancherOS and creates the folders for the share. This makes sure the 1020 user owns the folders.
-- `ssh rancher@10.0.0.200`
+- `ssh rancher@192.168.72.200`
 - rancher_password
 - `sudo su -`
 - `adduser -u 1020 share_user`
