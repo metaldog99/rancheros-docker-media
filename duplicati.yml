@@ -7,7 +7,7 @@ rancher:
       environment:
         PGID: 1020
         PUID: 1020
-        TZ: Americas/Phoenix
+        TZ: Phoenix
       ports:
       - 8200:8200
       volumes:
