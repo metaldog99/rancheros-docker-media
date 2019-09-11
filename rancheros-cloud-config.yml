@@ -26,3 +26,9 @@ rancher:
       environment:
         SERVER: 192.168.72.200
         SHARE: /mnt/Data/rancher
+runcmd:
+  - chown -R :rancher /mnt
+  - chmod -R g+rw /mnt
+  - apt update
+  - apt install cifs-utils -y
+  - sudo mount //192.168.72.115/Transmission -t cifs -o username=metaldog99,password=Elvis14c /mnt
