@@ -182,7 +182,7 @@ This step creates a docker that makes your FreeNAS dataset available as a NFS sh
 - rancher_password
 - `sudo su -`
 - `cd /var/lib/rancher/conf/cloud-config.d/`
-- `wget https://raw.githubusercontent.com/redshift-s/rancheros-docker-media/master/rancheros-cloud-config.yml`
+- `wget https://raw.githubusercontent.com/metaldog99/rancheros-docker-media/master/rancheros-cloud-config.yml`
 - `vi rancheros-cloud-config.yml`
 - edit SERVER and SHARE (i for insert, esc for exit out of insert, :wq for quit with save)
 - `sudo reboot`
@@ -216,7 +216,7 @@ The .yml files contains recepies/configuration for the docker containers. Just g
 `cd /var/lib/rancher/conf/cloud-config.d/`
 
 ### Portainer
-`wget` https://raw.githubusercontent.com/redshift-s/rancheros-docker-media/master/portainer.yml  
+`wget` https://raw.githubusercontent.com/metaldog99/rancheros-docker-media/master/portainer.yml  
 
 ### Media
 `wget` https://raw.githubusercontent.com/metaldog99/rancheros-docker-media/master/plex.yml  
