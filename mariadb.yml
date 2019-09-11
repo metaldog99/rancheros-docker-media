@@ -9,7 +9,7 @@ rancher:
       environment:
         PGID: 1020
         PUID: 1020
-        TZ: Americas/Phoenix
+        TZ: Phoenix
         MYSQL_ROOT_PASSWORD: root_password
         MYSQL_DATABASE: nextcloud
         MYSQL_USER: nextcloud
